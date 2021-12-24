@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Water
+  - Ground
+  - Touch
+  - camera
+  - Sphere
+  - Playerc
+  - Canvas
+  - Bullet
+  - BigBullet
+  - carc
+  - enter
+  - BigBullet2
+  - Bullet0
+  - Sniper
+  - targe
+  - Vehicle
+  - enemy
+  - survive
+  - Wall
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Ground
+  - Player
+  - Obstacles
+  - 
+  - body part
+  - humans
+  - Lift
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
