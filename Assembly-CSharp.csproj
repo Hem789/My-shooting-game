@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{33EE4C25-3CAF-0C08-B2A3-FAFEC28A02D6}</ProjectGuid>
+    <ProjectGuid>{372502F3-B894-6197-A6C2-10B36059EA9E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -123,19 +123,19 @@
      <None Include="Assets\EasyRoads3D\shaders\EasyRoads3D - Unity Standard 2018.shader" />
      <None Include="Assets\EasyRoads3D\shaders\EasyRoads3D-Road-Edit-Mode.shader" />
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>D:/Hem/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>D:/Backup/Extracted from git/My-shooting-game/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.PackageManagerUI.Editor">
- <HintPath>D:/Hem/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+ <HintPath>D:/Backup/Extracted from git/My-shooting-game/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.CollabProxy.Editor">
- <HintPath>D:/Hem/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+ <HintPath>D:/Backup/Extracted from git/My-shooting-game/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>D:/Hem/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>D:/Backup/Extracted from git/My-shooting-game/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.DataPrivacy">
- <HintPath>D:/Hem/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+ <HintPath>D:/Backup/Extracted from git/My-shooting-game/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>D:/Older version/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -336,10 +336,10 @@
  <HintPath>D:/Older version/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
  </Reference>
  <Reference Include="EasyRoads3Dv3">
- <HintPath>D:/Hem/Assets/EasyRoads3D/lib/EasyRoads3Dv3.dll</HintPath>
+ <HintPath>D:/Backup/Extracted from git/My-shooting-game/Assets/EasyRoads3D/lib/EasyRoads3Dv3.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.StandardEvents">
- <HintPath>D:/Hem/Library/PackageCache/com.unity.analytics@3.2.3/AnalyticsStandardEvents/Unity.Analytics.StandardEvents.dll</HintPath>
+ <HintPath>D:/Backup/Extracted from git/My-shooting-game/Library/PackageCache/com.unity.analytics@3.2.3/AnalyticsStandardEvents/Unity.Analytics.StandardEvents.dll</HintPath>
  </Reference>
  <Reference Include="netstandard">
  <HintPath>D:/Older version/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -689,9 +689,9 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="NavMeshComponentsEditor.csproj">
-      <Project>{A87BAF22-5C5E-5BD3-98F6-08EE421D133B}</Project>      <Name>NavMeshComponentsEditor</Name>    </ProjectReference>
+      <Project>{800F5C04-FBA5-E050-7A1B-A25DBDBF3C0F}</Project>      <Name>NavMeshComponentsEditor</Name>    </ProjectReference>
     <ProjectReference Include="NavMeshComponents.csproj">
-      <Project>{9EF06926-B6CC-C96A-72C9-1DC6E72FE2E3}</Project>      <Name>NavMeshComponents</Name>    </ProjectReference>
+      <Project>{0C7986E7-25B3-9B59-9307-C3C4B3917D6D}</Project>      <Name>NavMeshComponents</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

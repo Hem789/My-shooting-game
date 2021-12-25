@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{8F156F7F-D3D0-7E60-79BB-C25D9B879431}</ProjectGuid>
+    <ProjectGuid>{B00EE4FD-A888-7E6C-4222-0B570CF306DD}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>NavMeshComponentsTestsEditmode</AssemblyName>
@@ -293,25 +293,25 @@
  <HintPath>D:/Older version/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="EasyRoads3Dv3Editor">
- <HintPath>D:/Hem/Assets/EasyRoads3D/Editor/EasyRoads3Dv3Editor.dll</HintPath>
+ <HintPath>D:/Backup/Extracted from git/My-shooting-game/Assets/EasyRoads3D/Editor/EasyRoads3Dv3Editor.dll</HintPath>
  </Reference>
  <Reference Include="EasyRoads3Dv3">
- <HintPath>D:/Hem/Assets/EasyRoads3D/lib/EasyRoads3Dv3.dll</HintPath>
+ <HintPath>D:/Backup/Extracted from git/My-shooting-game/Assets/EasyRoads3D/lib/EasyRoads3Dv3.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Advertisements">
- <HintPath>D:/Hem/Library/PackageCache/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>
+ <HintPath>D:/Backup/Extracted from git/My-shooting-game/Library/PackageCache/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.StandardEvents">
- <HintPath>D:/Hem/Library/PackageCache/com.unity.analytics@3.2.3/AnalyticsStandardEvents/Unity.Analytics.StandardEvents.dll</HintPath>
+ <HintPath>D:/Backup/Extracted from git/My-shooting-game/Library/PackageCache/com.unity.analytics@3.2.3/AnalyticsStandardEvents/Unity.Analytics.StandardEvents.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.Editor">
- <HintPath>D:/Hem/Library/PackageCache/com.unity.analytics@3.2.3/Editor/Unity.Analytics.Editor.dll</HintPath>
+ <HintPath>D:/Backup/Extracted from git/My-shooting-game/Library/PackageCache/com.unity.analytics@3.2.3/Editor/Unity.Analytics.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.Tracker">
- <HintPath>D:/Hem/Library/PackageCache/com.unity.analytics@3.2.3/Editor/Unity.Analytics.Tracker.dll</HintPath>
+ <HintPath>D:/Backup/Extracted from git/My-shooting-game/Library/PackageCache/com.unity.analytics@3.2.3/Editor/Unity.Analytics.Tracker.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Purchasing">
- <HintPath>D:/Hem/Library/PackageCache/com.unity.purchasing@2.0.3/Editor/UnityEditor.Purchasing.dll</HintPath>
+ <HintPath>D:/Backup/Extracted from git/My-shooting-game/Library/PackageCache/com.unity.purchasing@2.0.3/Editor/UnityEditor.Purchasing.dll</HintPath>
  </Reference>
  <Reference Include="mscorlib">
  <HintPath>D:/Older version/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
@@ -670,9 +670,9 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="NavMeshComponents.csproj">
-      <Project>{9EF06926-B6CC-C96A-72C9-1DC6E72FE2E3}</Project>      <Name>NavMeshComponents</Name>    </ProjectReference>
+      <Project>{0C7986E7-25B3-9B59-9307-C3C4B3917D6D}</Project>      <Name>NavMeshComponents</Name>    </ProjectReference>
     <ProjectReference Include="NavMeshComponentsEditor.csproj">
-      <Project>{A87BAF22-5C5E-5BD3-98F6-08EE421D133B}</Project>      <Name>NavMeshComponentsEditor</Name>    </ProjectReference>
+      <Project>{800F5C04-FBA5-E050-7A1B-A25DBDBF3C0F}</Project>      <Name>NavMeshComponentsEditor</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -8,7 +8,7 @@ public class Rifleman : MonoBehaviour
     public Animator anim;
     private float gunDelay=0.1F,reload=0,bulletCount;
     public float a,swim;
-    private GameObject Player;
+    public GameObject Player;
     public GameObject Right, Left,bullet;
     private Vector3 playerDistance;
 
@@ -36,12 +36,16 @@ void Awake()
 
     void Update()
     {
+        if(!Player)
+        {
+            Player=GameObject.FindWithTag("Player");
+        }
        playerDistance=Player.transform.position-transform.position;
     }
    
     void OnAnimatorIK()
     {
-       Player=GameObject.FindWithTag("Player");
+       //Player=GameObject.FindWithTag("Player");
         if((walk.seen==false && walk.dead==false) || manager.follow==false) 
         {
             backgun.SetActive(true);
