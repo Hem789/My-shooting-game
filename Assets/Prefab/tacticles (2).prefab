@@ -11195,10 +11195,10 @@ GameObject:
   - component: {fileID: 9047501371615908992}
   - component: {fileID: 2579618977753667763}
   - component: {fileID: 8944899212628493281}
-  - component: {fileID: 6827623964614329401}
   - component: {fileID: 2832868291110222387}
   - component: {fileID: 4698328105118657879}
   - component: {fileID: 7661915823467163267}
+  - component: {fileID: 740682825649097706}
   m_Layer: 13
   m_Name: tacticles (2)
   m_TagString: enemy
@@ -11239,6 +11239,7 @@ Transform:
   - {fileID: 7075709428833751588}
   - {fileID: 4488952547104597291}
   - {fileID: 3442274055949637738}
+  - {fileID: 3507036588366894860}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -11269,7 +11270,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3290955229542083443}
   serializedVersion: 2
-  m_Mass: 200
+  m_Mass: 2900
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 1
@@ -11277,19 +11278,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 0
---- !u!65 &6827623964614329401
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3290955229542083443}
-  m_Material: {fileID: 13400000, guid: 134d4843d1eba0a4bab4d1fc640569eb, type: 2}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 0.5, y: 1.8, z: 0.4}
-  m_Center: {x: 0, y: 0.9, z: 0}
 --- !u!114 &2832868291110222387
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11308,6 +11296,7 @@ MonoBehaviour:
   anim: {fileID: 2579618977753667763}
   a: 30
   swim: -5.7
+  Player: {fileID: 0}
   Right: {fileID: 2698671961129073979}
   Left: {fileID: 2342057491809384438}
   bullet: {fileID: 4990275893186416212, guid: 0d8dff1da76cafb479726d4fdbbefcbb, type: 3}
@@ -11338,6 +11327,7 @@ MonoBehaviour:
   handgun: {fileID: 4558031959238315526}
   backgun: {fileID: 6067370909493127353}
   coin: {fileID: 423199463115903889, guid: c4601fad661c72c43ae5c85b46e2b858, type: 3}
+  gunCollider: {fileID: 5742933303097325885}
   anime: {fileID: 2579618977753667763}
   follow: 0
   shoot: 0
@@ -11372,6 +11362,20 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 1
+--- !u!136 &740682825649097706
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3290955229542083443}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.2
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!1 &3338810521936053840
 GameObject:
   m_ObjectHideFlags: 0
@@ -12799,6 +12803,50 @@ Transform:
   m_Father: {fileID: 7611864683381380577}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &5742933303097325885
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3507036588366894860}
+  - component: {fileID: 548778882647902815}
+  m_Layer: 13
+  m_Name: gun collider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3507036588366894860
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5742933303097325885}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 9047501371615908992}
+  m_RootOrder: 22
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &548778882647902815
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5742933303097325885}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.1, y: 0.099999994, z: 0.6908417}
+  m_Center: {x: 0, y: 0.1, z: 0.7713089}
 --- !u!1 &5762183209730979728
 GameObject:
   m_ObjectHideFlags: 0

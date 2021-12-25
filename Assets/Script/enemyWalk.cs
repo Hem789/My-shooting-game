@@ -6,7 +6,7 @@ using UnityEngine.AI;
 public class enemyWalk : MonoBehaviour
 {
     public Transform t1,t2,t3,t4,t5,t6,target,gunpoint;
-    public GameObject gun,handgun,backgun,coin;
+    public GameObject gun,handgun,backgun,coin,gunCollider;
     private GameObject player;
     private RaycastHit hit,nevRay;
     private float destroy,health=5;
@@ -121,6 +121,14 @@ public class enemyWalk : MonoBehaviour
     }
     void FixedUpdate()
     {
+        if (manager.outside==true)
+        {
+            gunCollider.SetActive(true);
+        }
+        if(manager.outside==false)
+        {
+            gunCollider.SetActive(false);
+        }
         player=GameObject.FindWithTag("Player");
         if(lvl==2)
         {
