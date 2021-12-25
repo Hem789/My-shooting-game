@@ -211,10 +211,8 @@ public class GetIn1 : MonoBehaviour
             cam.transform.rotation=camu.transform.rotation;
             cam.farClipPlane=100F;
             heli.enabled=false;
-            //sphere.SetActive(false);
             inside=false;
             manager.vehicleExit();
-            //niski=false;
             playerControl.SetActive(true);
             heliControl.SetActive(false);
             playerout=true;
