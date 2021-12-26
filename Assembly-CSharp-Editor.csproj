@@ -60,20 +60,11 @@
      <Compile Include="Assets\MeshCombiner\Editor\MeshCombinerEditor.cs" />
      <Compile Include="Assets\MobFarm\AutoPool\Editor\AP_Manager_Editor.cs" />
      <Compile Include="Assets\MobFarm\AutoPool\Editor\AP_PoolBlock_Drawer.cs" />
- <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>D:/Backup/Extracted from git/My-shooting-game/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
- </Reference>
  <Reference Include="Unity.PackageManagerUI.Editor">
  <HintPath>D:/Backup/Extracted from git/My-shooting-game/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.CollabProxy.Editor">
  <HintPath>D:/Backup/Extracted from git/My-shooting-game/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.TextMeshPro">
- <HintPath>D:/Backup/Extracted from git/My-shooting-game/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Analytics.DataPrivacy">
- <HintPath>D:/Backup/Extracted from git/My-shooting-game/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>D:/Older version/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -314,18 +305,6 @@
  </Reference>
  <Reference Include="EasyRoads3Dv3">
  <HintPath>D:/Backup/Extracted from git/My-shooting-game/Assets/EasyRoads3D/lib/EasyRoads3Dv3.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.Advertisements">
- <HintPath>D:/Backup/Extracted from git/My-shooting-game/Library/PackageCache/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Analytics.StandardEvents">
- <HintPath>D:/Backup/Extracted from git/My-shooting-game/Library/PackageCache/com.unity.analytics@3.2.3/AnalyticsStandardEvents/Unity.Analytics.StandardEvents.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Analytics.Editor">
- <HintPath>D:/Backup/Extracted from git/My-shooting-game/Library/PackageCache/com.unity.analytics@3.2.3/Editor/Unity.Analytics.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Analytics.Tracker">
- <HintPath>D:/Backup/Extracted from git/My-shooting-game/Library/PackageCache/com.unity.analytics@3.2.3/Editor/Unity.Analytics.Tracker.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Purchasing">
  <HintPath>D:/Backup/Extracted from git/My-shooting-game/Library/PackageCache/com.unity.purchasing@2.0.3/Editor/UnityEditor.Purchasing.dll</HintPath>

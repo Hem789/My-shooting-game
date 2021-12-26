@@ -471,7 +471,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slide: {fileID: 0}
-  volumeCofficient: 0.5
+  volumeCofficient: 0.1
 --- !u!82 &1914433760
 AudioSource:
   m_ObjectHideFlags: 0

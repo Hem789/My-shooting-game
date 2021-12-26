@@ -109,6 +109,7 @@ public class enemyWalk : MonoBehaviour
     {
         if(health<=0 && dead==false)
         {
+            
             manager.enemy();
             MF_AutoPool.Spawn(coin,transform.position+new Vector3(0,1,0),transform.rotation);
             dead=true;
@@ -121,7 +122,8 @@ public class enemyWalk : MonoBehaviour
     }
     void FixedUpdate()
     {
-        if (manager.outside==true)
+      
+        if (manager.outside==true && health>0)
         {
             gunCollider.SetActive(true);
         }
@@ -355,6 +357,7 @@ public class enemyWalk : MonoBehaviour
     }
     void ragdoll(bool a)
     {
+        
     gun.SetActive(false);
     handgun.SetActive(false);
     backgun.SetActive(false);
@@ -364,6 +367,7 @@ public class enemyWalk : MonoBehaviour
     }
     Rb.useGravity=true;
     mainCollider.enabled=!a;
-    anime.enabled=!a;       
+    anime.enabled=!a;
+    gunCollider.SetActive (!a);       
     }
 }

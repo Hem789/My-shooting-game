@@ -9,8 +9,9 @@ public class Car : MonoBehaviour
     public float motorForce,BrakeForce, steer;
     public Transform FLW,BLW,FRW,BRW;
     public FixedButton right, left,up ,down,brake;
-    public GameObject Light1,Light2,carcam;
+    public GameObject Light1,Light2,carcam,revMotion;
     public AudioSource motion;
+    private bool revStarter=false;
     private float h=0,v=0;
     private GameManager manager;
     public WheelCollider FL,FR,BL,BR;// Start is called before the first frame update
@@ -28,7 +29,17 @@ public class Car : MonoBehaviour
     }
     void Update ()
     {
+        if(manager.Pause==true)
+            { 
+        motion.enabled=false;
+        revMotion.SetActive(false);
+            }
         piv.transform.rotation=Quaternion.Slerp(piv.transform.rotation,Quaternion.Euler(0,transform.rotation.eulerAngles.y,0),.4F*Time.deltaTime);
+    }
+    void OnEnabled()
+    {
+        revStarter=false;
+        
     }
 
     // Upfixeddate is called once per frame
@@ -40,23 +51,29 @@ public class Car : MonoBehaviour
         pivot.transform.position=transform.position;
         Light1.SetActive(false);
         Light2.SetActive(false);
-        if(manager.Pause==true)
-            { 
-        motion.enabled=false;
-            }
+        
         h=0;
         v=0;
         if(up.Pressed)
         {
             v=1;
+            motion.enabled=true;
+            revMotion.SetActive(false);
            if(manager.Pause==false)
             { 
-            motion.enabled=true;
+            
+            revStarter=true;
+
             }
         }
         if(!up.Pressed)
         {
             motion.enabled=false;
+            if(revStarter==true)
+            {
+            revMotion.SetActive(true);
+            revStarter=false;
+            }
         }
         
         if(down.Pressed)
@@ -64,6 +81,7 @@ public class Car : MonoBehaviour
             v=-.5F;
         Light1.SetActive(true);
         Light2.SetActive(true);
+        revMotion.SetActive(false);
         }
         if(right.Pressed)
         {
@@ -90,6 +108,7 @@ public class Car : MonoBehaviour
         
         if(Input.GetAxis("Jump")>0|| brake.Pressed==true)
         {
+            revMotion.SetActive(false);
             BL.brakeTorque=BrakeForce;
             BR.brakeTorque=BrakeForce;
             FL.brakeTorque=BrakeForce;
