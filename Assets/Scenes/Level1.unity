@@ -47367,7 +47367,7 @@ PrefabInstance:
     - target: {fileID: 6549355502896395016, guid: 546629fcfb741494c90fc91e8ed19868,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6549355502896395018, guid: 546629fcfb741494c90fc91e8ed19868,
         type: 3}
@@ -47479,7 +47479,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!195 &6549355502470217326
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -47527,6 +47527,7 @@ MonoBehaviour:
   handgun: {fileID: 106591637}
   backgun: {fileID: 134630354}
   coin: {fileID: 423199463115903889, guid: c4601fad661c72c43ae5c85b46e2b858, type: 3}
+  gunCollider: {fileID: 0}
   anime: {fileID: 6549355502470217331}
   follow: 0
   shoot: 0
@@ -47558,6 +47559,7 @@ MonoBehaviour:
   anim: {fileID: 6549355502470217331}
   a: 30
   swim: -5.7
+  Player: {fileID: 0}
   Right: {fileID: 1278322952}
   Left: {fileID: 1521115162}
   bullet: {fileID: 4990275893186416212, guid: 0d8dff1da76cafb479726d4fdbbefcbb, type: 3}

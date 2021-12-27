@@ -1,7 +1,2 @@
 Base path: D:/Older version/Editor/Data
 Cmd: initializeCompiler
-Cmd: compileComputeKernel
-  api=4 insize=1526 outsize=1533 ok=1
-Cmd: compileComputeKernel
-  api=4 insize=2343 outsize=1341 ok=1
-Cmd: initializeCompiler
