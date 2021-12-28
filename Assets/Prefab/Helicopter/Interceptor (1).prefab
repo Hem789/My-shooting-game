@@ -576,7 +576,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slide: {fileID: 0}
-  volumeCofficient: 0.1
+  volumeCofficient: 0.05
 --- !u!1 &613872822355879217
 GameObject:
   m_ObjectHideFlags: 0

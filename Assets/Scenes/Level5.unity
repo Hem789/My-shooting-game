@@ -40833,6 +40833,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 613872822255838520, guid: e15bdab143052ec4c86606f44728bfbb,
+        type: 3}
+      propertyPath: volumeCofficient
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2662065685510814997, guid: e15bdab143052ec4c86606f44728bfbb,
         type: 3}
       propertyPath: m_Size.x
