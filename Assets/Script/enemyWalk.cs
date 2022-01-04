@@ -317,7 +317,10 @@ public class enemyWalk : MonoBehaviour
         }
         if((seen==true || lvl==2) && doNevMesh==true && transform.position.y>swim+.5F)
         {
+            if(agent)
+            {
         agent.enabled=true;
+            }
         if(manager.follow==true)
         {
             agent.enabled=true;

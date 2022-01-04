@@ -72,8 +72,14 @@ public class cops : MonoBehaviour
         {
         if(target.position==t6.position && moveDirection.magnitude<=0.2F) 
         {
+            if(a)
+            {
             a.enabled=true;
+            }
+            if(coin)
+            {
             coin.SetActive(true);
+            }
             t1.transform.parent=transform;
             t2.transform.parent=transform;
             t3.transform.parent=transform;

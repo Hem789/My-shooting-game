@@ -9,10 +9,10 @@ public class Car : MonoBehaviour
     public float motorForce,BrakeForce, steer;
     public Transform FLW,BLW,FRW,BRW;
     public FixedButton right, left,up ,down,brake;
-    public GameObject Light1,Light2,carcam,revMotion;
+    public GameObject Light1,Light2,carcam,revMotion,maxRunSound;
     public AudioSource motion;
     private bool revStarter=false;
-    private float h=0,v=0;
+    private float h=0,v=0,maxRunTime=4.8F;
     private GameManager manager;
     public WheelCollider FL,FR,BL,BR;// Start is called before the first frame update
     public void wheel(WheelCollider a,Transform b)
@@ -57,8 +57,17 @@ public class Car : MonoBehaviour
         if(up.Pressed)
         {
             v=1;
+            if(maxRunTime>=0)
+            {
             motion.enabled=true;
             revMotion.SetActive(false);
+            maxRunTime-=Time.fixedDeltaTime;
+            }
+            else
+            {
+                motion.enabled=false;
+                maxRunSound.SetActive(true);
+            }
            if(manager.Pause==false)
             { 
             
@@ -71,6 +80,8 @@ public class Car : MonoBehaviour
             motion.enabled=false;
             if(revStarter==true)
             {
+                maxRunTime=4.8F;
+                maxRunSound.SetActive(false);
             revMotion.SetActive(true);
             revStarter=false;
             }
