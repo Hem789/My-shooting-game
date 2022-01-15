@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 950, y: 300}
+  m_MinSize: {x: 950, y: 548}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -46,7 +46,7 @@ MonoBehaviour:
     y: 0
     width: 1366
     height: 685
-  m_MinSize: {x: 950, y: 300}
+  m_MinSize: {x: 950, y: 548}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &3
 MonoBehaviour:
@@ -115,7 +115,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 498}
   m_MaxSize: {x: 14004, y: 14048}
   vertical: 0
-  controlID: 73
+  controlID: 56
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -140,7 +140,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 498}
   m_MaxSize: {x: 10002, y: 14048}
   vertical: 1
-  controlID: 74
+  controlID: 57
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -165,7 +165,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 224}
   m_MaxSize: {x: 8006, y: 4024}
   vertical: 0
-  controlID: 75
+  controlID: 58
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -211,8 +211,8 @@ MonoBehaviour:
     y: 0
     width: 773
     height: 361
-  m_MinSize: {x: 204, y: 224}
-  m_MaxSize: {x: 4004, y: 4024}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 14}
@@ -311,10 +311,10 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -542
-    m_HBaseRangeMax: 542
-    m_VBaseRangeMin: -118.5
-    m_VBaseRangeMax: 118.5
+    m_HBaseRangeMin: -640
+    m_HBaseRangeMax: 640
+    m_VBaseRangeMin: -360
+    m_VBaseRangeMax: 360
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -334,20 +334,20 @@ MonoBehaviour:
       y: 17
       width: 1084
       height: 237
-    m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 542, y: 118.5}
+    m_Scale: {x: 0.32916668, y: 0.32916668}
+    m_Translation: {x: 542, y: 118.50001}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -542
-      y: -118.5
-      width: 1084
-      height: 237
+      x: -1646.5822
+      y: -360
+      width: 3293.1643
+      height: 720
     m_MinimalGUI: 1
-  m_defaultScale: 1
+  m_defaultScale: 0.32916668
   m_TargetTexture: {fileID: 0}
   m_CurrentColorSpace: 0
   m_LastWindowPixelSize: {x: 1084, y: 254}
@@ -383,10 +383,10 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: ccaafcffeaaafcff2cc1fcffb2d1fcff84d7fcff50f4fcffc666fdffe266fdffee66fdffbcb5fdffdefbffff2e340000
+      scrollPos: {x: 0, y: 160}
+      m_SelectedIDs: 343e0000
+      m_LastClickedID: 15924
+      m_ExpandedIDs: 2436ffff2efaffff843e0000943e0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -668,9 +668,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 356.98828, y: 0.8325859, z: 146.00359}
+    m_Target: {x: 508.89633, y: 0.9, z: 211.75174}
     speed: 2
-    m_Value: {x: 356.98828, y: 0.8325859, z: 146.00359}
+    m_Value: {x: 508.89633, y: 0.9, z: 211.75174}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -698,13 +698,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.23352961, y: -0.26740208, z: 0.06697153, w: -0.9324564}
+    m_Target: {x: 0.06348797, y: -0.876262, z: 0.12035826, w: 0.46222103}
     speed: 2
-    m_Value: {x: -0.23352961, y: -0.26740208, z: 0.06697153, w: -0.9324564}
+    m_Value: {x: 0.06348796, y: -0.8762619, z: 0.12035824, w: 0.46222097}
   m_Size:
-    m_Target: 293.86194
+    m_Target: 3.8782914
     speed: 2
-    m_Value: 293.86194
+    m_Value: 3.8782914
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -754,20 +754,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Car Engine Sound - Rotary x8 Free/Assets/Audio/rotary_x8_free/Interior
+    - Assets
   m_ViewMode: 1
   m_StartGridSize: 57
   m_LastFolders:
-  - Assets/Car Engine Sound - Rotary x8 Free/Assets/Audio/rotary_x8_free/Interior
+  - Assets
   m_LastFoldersGridSize: 57
-  m_LastProjectPath: D:\Backup\Extracted from git\My-shooting-game
+  m_LastProjectPath: D:\Backup\extracted from git\My-shooting-game
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 207}
-    m_SelectedIDs: d24b0000
-    m_LastClickedID: 19410
-    m_ExpandedIDs: 00000000bc27000006280000302800003628000080280000c0280000c8280000462900004e290000ea290000242a00001a2b00004e2b0000ea2b0000222c0000242c0000722c00009a2c0000a22c0000162d0000a42d0000842e0000fe2f000044300000a2300000463100001e3200003a320000463200006a3200007a4800007c4800007e48000080480000824800008448000086480000884800008a4800008c4800008e48000090480000924800009448000096480000984800009a4800009c4800009e480000a0480000a2480000a4480000a6480000a8480000aa480000ac480000ae480000b0480000b2480000b4480000b6480000b8480000ea4b000000ca9a3b
+    scrollPos: {x: 0, y: 79}
+    m_SelectedIDs: 2e310000
+    m_LastClickedID: 12590
+    m_ExpandedIDs: 000000002e31000078310000a2310000a8310000f2310000323200003a320000b8320000c03200005c33000070330000983300008e340000c23400005e3500009635000098350000e63500000e360000163600008a36000018370000f837000072390000b8390000e0390000183a0000ba3a0000923b0000a63b0000b03b0000be3b0000e23b00008a5100008c5100008e51000090510000925100009451000096510000985100009a5100009c5100009e510000a0510000a2510000a4510000a6510000a8510000aa510000ac510000ae510000b0510000b2510000b4510000b6510000b8510000ba510000bc510000be510000c0510000c2510000c451000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -795,7 +795,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000bc270000062800003028000080280000c0280000c8280000462900004e290000ea290000242a00001a2b00004e2b0000ea2b0000222c0000242c0000722c00009a2c0000a22c0000162d0000a42d0000842e0000fe2f000044300000a2300000463100001e3200003a320000463200006a3200007a4800007c4800007e48000080480000824800008448000086480000884800008a4800008c4800008e48000090480000924800009448000096480000984800009a4800009c4800009e480000a0480000a2480000a4480000a6480000a8480000aa480000ac480000ae480000b0480000b2480000b4480000b6480000b8480000
+    m_ExpandedIDs: 000000002e31000078310000a2310000a8310000f2310000323200003a320000b8320000c03200005c33000070330000983300008e340000c23400005e3500009635000098350000e63500000e360000163600008a36000018370000f837000072390000b8390000e0390000183a0000ba3a0000923b0000a63b0000b03b0000be3b0000e23b00008a5100008c5100008e51000090510000925100009451000096510000985100009a5100009c5100009e510000a0510000a2510000a4510000a6510000a8510000aa510000ac510000ae510000b0510000b2510000b4510000b6510000b8510000ba510000bc510000be510000c0510000c2510000c4510000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
