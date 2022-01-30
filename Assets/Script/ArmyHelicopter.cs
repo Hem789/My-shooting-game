@@ -42,6 +42,7 @@ public class ArmyHelicopter : MonoBehaviour
         bulletCount=50;
         seenCount=0;
         Destr=15;
+        decrease=0;
     }
 
     // Update is called once per frame
