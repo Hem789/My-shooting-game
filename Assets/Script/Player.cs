@@ -24,6 +24,8 @@ public class Player : MonoBehaviour
     public Collision col;
     void OnTriggerEnter(Collider a)
     {
+        if(falling==false)
+        {
         if(a.gameObject.tag=="Bullet0")
         {
             manager.hit(1);
@@ -31,6 +33,7 @@ public class Player : MonoBehaviour
         if(a.gameObject.tag=="Sniper" || a.gameObject.tag=="BigBullet2")
         {
             manager.hit(20);
+        }
         }
     }
     
@@ -53,21 +56,30 @@ public class Player : MonoBehaviour
             {
         rb.AddForce(transform.up*(-5000));
             }
+            if(ground.distance>height )
+           {
+            
+            anime.Play("Falling");
+           }
             if(ground.transform.gameObject.tag!="Water")
             {
-           if(ground.distance>height )
+                if(ground.distance>height )
            {
-            falling=true;
+           falling=true;
+           rb.AddForce(new Vector3(0,-20,0));
            }
-           
             }
-            if(ground.distance<=1.5F && falling==true)
+            if(ground.distance<=1.2F && falling==true)
             {
-            ragdollcontrol=true;
+                anime.SetBool("hitGround",true);
+                rb.AddForce(new Vector3(0,-20,0));
+                manager.healthCount=0;
+            //ragdollcontrol=true;
             //manager.healthCount=0;
-            //colli.enabled=false;
+            colli.enabled=false;
+            
             //anime.enabled=false;
-            doll(true);
+            //doll(true);
             //}
             //if(transform.position.y<=ground.point.y+1 && falling==true)
             //{
@@ -90,7 +102,6 @@ public class Player : MonoBehaviour
                 if(joystick.Vertical<0)
                 {
                     anime.SetFloat("croach",-1);
-                   //rb.AddForce(transform.forward*(-3000));
                 }
             }
             else
@@ -101,6 +112,8 @@ public class Player : MonoBehaviour
         if(transform.position.y<=swim+.2F && transform.position.y>=swimf-0.2F && ragdollcontrol==false)
         {
             anime.SetBool("Swim",true);
+            falling=false;
+            colli.enabled=true;
             //if(Input.GetAxis("Vertical")==0||Input.GetAxis("Horizontal")==0)
             if(joystick.Vertical==0 || joystick.Horizontal==0)
             {
@@ -127,6 +140,8 @@ public class Player : MonoBehaviour
             anime.SetBool("Swim",true);
             transform.position+=new Vector3(0,0.03F,0);
             rb.useGravity=false;
+            falling=false;
+            colli.enabled=true;
         }
         if(transform.position.y>swim+0.2 && ragdollcontrol==false)
         {

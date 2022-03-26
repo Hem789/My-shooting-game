@@ -841,7 +841,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7698636747807194586}
   serializedVersion: 2
-  m_Mass: 8000
+  m_Mass: 80000
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 1
@@ -1110,6 +1110,8 @@ MonoBehaviour:
   Joystick2: {fileID: 0}
   min: -15
   max: 45
+  rotSpeed: 0.5
+  joyrot: 0.3
   pivot: {fileID: 7698636747004565682}
   body: {fileID: 0}
   touch: {fileID: 0}

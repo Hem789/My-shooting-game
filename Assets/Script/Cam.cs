@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class Cam : MonoBehaviour
 {
-    public Joystick Joystick1, Joystick2;
+    [SerializeField]
+    private Joystick Joystick1, Joystick2;
     private Vector3 offset;
     public float min,max;
-    private float rotSpeed=.4F,joyrot=0.2F;
+    [SerializeField]
+    private float rotSpeed=.5F,joyrot=0.3F;
     public Transform pivot,body;
     public FixedTouchField touch;
     private GameManager manager;
@@ -42,7 +44,7 @@ public class Cam : MonoBehaviour
         }
         else
         {
-            rotSpeed=.3F;
+            rotSpeed=.5F;
         }
     }
     // Update is called once per frame

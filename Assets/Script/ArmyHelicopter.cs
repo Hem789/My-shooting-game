@@ -37,7 +37,7 @@ public class ArmyHelicopter : MonoBehaviour
     {
         health=100;
         fire.SetActive(false);
-        firing.enabled=true;
+        firing.enabled=false;
         delay=0.1F;
         bulletCount=50;
         seenCount=0;
