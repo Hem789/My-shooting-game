@@ -67,6 +67,7 @@ MonoBehaviour:
   time: 1
   timeStore: 1
   Speed: 50
+  trail: {fileID: 9193114432537008558}
 --- !u!65 &239293638050949876
 BoxCollider:
   m_ObjectHideFlags: 0

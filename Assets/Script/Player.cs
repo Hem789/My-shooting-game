@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    [SerializeField]
+    private LayerMask mask;
     private RaycastHit ground,ground1;
     private BoxCollider colli;
     //private Collider[] ragdoll;
@@ -14,6 +16,7 @@ public class Player : MonoBehaviour
     private float time=8,reloadTime;
     public Joystick joystick,firestick;
     public Animator anime;
+   
     public Transform pivot,piv,cam;
     public FixedButton jumpbool,firebool;//croachbool;
     private bool ragdollcontrol=false,croach=false,falling=false;
@@ -24,7 +27,7 @@ public class Player : MonoBehaviour
     public Collision col;
     void OnTriggerEnter(Collider a)
     {
-        if(falling==false)
+        if(falling==false )
         {
         if(a.gameObject.tag=="Bullet0")
         {
@@ -50,7 +53,7 @@ public class Player : MonoBehaviour
     }
     void LateUpdate()
     {
-        if(Physics.Raycast(transform.position+new Vector3(0,1F,0),-transform.up,out ground,50))
+        if(Physics.Raycast(transform.position+new Vector3(0,1F,0),-transform.up,out ground,50, ~mask))
         {
             if(transform.position.y>swim)
             {
@@ -58,33 +61,33 @@ public class Player : MonoBehaviour
             }
             if(ground.distance>height )
            {
-            
             anime.Play("Falling");
            }
-            if(ground.transform.gameObject.tag!="Water")
+            if(ground.transform.gameObject.tag=="Ground")
             {
                 if(ground.distance>height )
            {
            falling=true;
            rb.AddForce(new Vector3(0,-20,0));
+           colli.center=new Vector3(colli.center.x,2.75F,colli.center.z);
+           //colli.size=new Vector3(colli.size.x,0.05F,colli.size.z);
            }
             }
-            if(ground.distance<=1.2F && falling==true)
+            if(ground.distance<=1.8F && falling==true)
             {
                 anime.SetBool("hitGround",true);
-                rb.AddForce(new Vector3(0,-20,0));
+                if(transform.position.y>-1.6F)
+                {
+                rb.AddForce(new Vector3(0,-180F,0));
+                }
+                /*else
+                {
+                    transform.position=new Vector3(transform.position.x,-1.7F,transform.position.z);
+                }*/
+
                 manager.healthCount=0;
-            //ragdollcontrol=true;
-            //manager.healthCount=0;
-            colli.enabled=false;
+                ragdollcontrol=true;
             
-            //anime.enabled=false;
-            //doll(true);
-            //}
-            //if(transform.position.y<=ground.point.y+1 && falling==true)
-            //{
-                //transform.position=new Vector3(transform.position.x,ground.point.y,transform.position.z);
-                //rb.constraints=RigidbodyConstraints.FreezePositionY;
             }
         }
        
@@ -343,9 +346,12 @@ public class Player : MonoBehaviour
         //}
         shoot.Gun.SetActive(false);
         shoot.rifle.enabled=false;
+        if(falling==false)
+        {
         rb.useGravity=!ragdollcontrol;
         colli.enabled=!ragdollcontrol;
         anime.enabled=!ragdollcontrol;
+        }
     }    
     void sitting(bool sit)
     {

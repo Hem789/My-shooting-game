@@ -702,7 +702,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 2aa3d76fafa200d479302a333b76cde5, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 85df9ac8b0205074bb0ef3e99cbc1ce1, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -979,9 +979,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pivot: {fileID: 2662065686110329989}
   piv: {fileID: 2662065686555968065}
-  motorForce: 1500
+  motorForce: 150000
   BrakeForce: 500000
-  steer: 35
+  steer: 60
   FLW: {fileID: 2662065685959721428}
   BLW: {fileID: 2662065685671197044}
   FRW: {fileID: 2662065686397849572}

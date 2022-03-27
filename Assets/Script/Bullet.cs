@@ -8,6 +8,8 @@ public class Bullet : MonoBehaviour
     public float time,timeStore;
     private Vector3 Direction;
     public float Speed;
+    [SerializeField]
+    private GameObject trail;
     // Start is called before the first frame update
     void OnTriggerEnter(Collider b)
     {
@@ -15,15 +17,19 @@ public class Bullet : MonoBehaviour
         //{
          //   rigidBody.useGravity=true;
             //rigidBody.isKinematic=true;
+            if(trail)
+            trail.SetActive(false);
             MF_AutoPool.Despawn(gameObject);
             //Destroy(gameObject);
         //}
     }
     void OnEnable()
     {
-        
+        if(trail)
+        trail.SetActive(true);
         rigidBody.useGravity=false;
         time=timeStore;
+
     }
     void OnTriggerStay(Collider b)
     {
@@ -39,6 +45,8 @@ public class Bullet : MonoBehaviour
     {
         //time=15;
         //timeStore=time;
+        if(trail)
+        trail.SetActive(true);
         rigidBody=GetComponent<Rigidbody>();
     }
 
