@@ -68,7 +68,7 @@ public class Player : MonoBehaviour
                 if(ground.distance>height )
            {
            falling=true;
-           rb.AddForce(new Vector3(0,-20,0));
+           rb.AddForce(new Vector3(0,-180,0));
            colli.center=new Vector3(colli.center.x,2.75F,colli.center.z);
            //colli.size=new Vector3(colli.size.x,0.05F,colli.size.z);
            }
