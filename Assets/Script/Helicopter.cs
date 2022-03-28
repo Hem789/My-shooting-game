@@ -50,7 +50,7 @@ public class Helicopter : MonoBehaviour
         }
     }
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         Camera.main.transform.position=hcam.transform.position;
         Camera.main.transform.rotation=hcam.transform.rotation;
@@ -73,20 +73,12 @@ public class Helicopter : MonoBehaviour
         
         pivot.transform.parent=null;
         pivot.transform.position=transform.position;  
-       /* if(transform.position.y<5)
-        {
-            fly=false;
-            rb.useGravity=true;
-        }
-        else
-        {
-            fly=true;
-        }*/
+       
 
         if(transform.position.y>=-9)
         {
-        frontPropeller.transform.Rotate (0, 30, 0);
-		backPropeller.transform.Rotate (20, 0, 0);
+        frontPropeller.transform.Rotate (0, 50, 0);
+		backPropeller.transform.Rotate (35, 0, 0);
         
         
         if(transform.position.y<=25)
@@ -119,14 +111,14 @@ public class Helicopter : MonoBehaviour
             transform.Rotate(0,.7F*joystick2.Horizontal,0);
             yStore=direction.y;
             //direction=transform.forward*Input.GetAxis("heliForward")+transform.right*Input.GetAxis("Horizontal");
-            if(joystick1.Vertical!=0)
-            {
-            direction=(transform.forward*joystick1.Vertical*2+transform.forward*1)+transform.right*joystick1.Horizontal;
-            }
-            else
-            {
-                direction=transform.right*joystick1.Horizontal;
-            }
+            //if(joystick1.Vertical!=0)
+            //{
+            direction=(transform.forward*joystick1.Vertical*3/*+transform.forward*1*/)+transform.right*joystick1.Horizontal*2;
+            //}
+            //else
+            //{
+              //  direction=transform.right*joystick1.Horizontal;
+            //}
             direction=direction.normalized*5F;
             direction.y=yStore;
             rb.velocity=direction*3;

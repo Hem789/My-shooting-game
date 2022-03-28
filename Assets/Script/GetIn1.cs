@@ -54,6 +54,7 @@ public class GetIn1 : MonoBehaviour
             if(inside==false && (Input.GetKey(KeyCode.F)||getin.Pressed==true))
             {
             heleecam.SetActive(true);
+            heleecam.transform.parent=null;
             heli.enabled=true;
             a.gameObject.transform.parent=transform;
             cam.transform.parent=helicam.transform;
@@ -210,6 +211,7 @@ public class GetIn1 : MonoBehaviour
             cam.transform.position=camu.transform.position;
             cam.transform.rotation=camu.transform.rotation;
             cam.farClipPlane=100F;
+            heleecam.transform.parent=transform;
             heli.enabled=false;
             inside=false;
             manager.vehicleExit();

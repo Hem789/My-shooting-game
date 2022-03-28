@@ -9,7 +9,7 @@ public class Cam : MonoBehaviour
     private Vector3 offset;
     public float min,max;
     [SerializeField]
-    private float rotSpeed=.5F,joyrot=0.8F;
+    private float rotSpeed=.5F,joyrot=0.34F;
     public Transform pivot,body;
     public FixedTouchField touch;
     private GameManager manager;

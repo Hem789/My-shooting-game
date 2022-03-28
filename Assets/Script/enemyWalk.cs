@@ -163,10 +163,24 @@ public class enemyWalk : MonoBehaviour
             {
         if(distance.magnitude>=100)
         {
+            t1.gameObject.SetActive(false);
+            t2.gameObject.SetActive(false);
+            t3.gameObject.SetActive(false);
+            t4.gameObject.SetActive(false);
+            t5.gameObject.SetActive(false);
+            t6.gameObject.SetActive(false);
+            target.gameObject.SetActive(false);
             anime.enabled=false;
         }
         if(distance.magnitude<100)
         {
+            t1.gameObject.SetActive(true);
+            t2.gameObject.SetActive(true);
+            t3.gameObject.SetActive(true);
+            t4.gameObject.SetActive(true);
+            t5.gameObject.SetActive(true);
+            t6.gameObject.SetActive(true);
+            target.gameObject.SetActive(true);
             anime.enabled=true;
         }
             }
