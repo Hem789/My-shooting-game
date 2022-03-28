@@ -9,7 +9,7 @@ public class Cam : MonoBehaviour
     private Vector3 offset;
     public float min,max;
     [SerializeField]
-    private float rotSpeed=.5F,joyrot=0.3F;
+    private float rotSpeed=.5F,joyrot=0.8F;
     public Transform pivot,body;
     public FixedTouchField touch;
     private GameManager manager;
@@ -46,17 +46,17 @@ public class Cam : MonoBehaviour
         {
             rotSpeed=.5F;
         }
-    }
+    //}
     // Update is called once per frame
-    void LateUpdate()
-    {
+    //void LateUpdate()
+    //{
         if(manager.Pause==false)
     {
         //float x=Input.GetAxis("Mouse X")*rotSpeed;
         float x=touch.TouchDist.x * rotSpeed;
         if(manager.scoped==false)
         {
-        x+=Joystick1.Horizontal*joyrot+Joystick2.Horizontal*.23F;
+        x+=Joystick1.Horizontal*joyrot+Joystick2.Horizontal*.5F;
         }
         pivot.Rotate(0,x,0);
         //float y=Input.GetAxis("Mouse Y")*rotSpeed;

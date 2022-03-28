@@ -69,21 +69,18 @@ public class Player : MonoBehaviour
            {
            falling=true;
            rb.AddForce(new Vector3(0,-180,0));
-           colli.center=new Vector3(colli.center.x,2.75F,colli.center.z);
-           //colli.size=new Vector3(colli.size.x,0.05F,colli.size.z);
+           colli.center=new Vector3(colli.center.x,1.77F,colli.center.z);
+           colli.size=new Vector3(colli.size.x,.4F,colli.size.z);
            }
             }
             if(ground.distance<=1.8F && falling==true)
             {
                 anime.SetBool("hitGround",true);
-                if(transform.position.y>-1.6F)
+               /* if(transform.position.y>-1.6F)
                 {
                 rb.AddForce(new Vector3(0,-180F,0));
-                }
-                /*else
-                {
-                    transform.position=new Vector3(transform.position.x,-1.7F,transform.position.z);
                 }*/
+                
 
                 manager.healthCount=0;
                 ragdollcontrol=true;

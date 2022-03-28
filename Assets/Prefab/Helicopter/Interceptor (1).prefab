@@ -979,9 +979,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pivot: {fileID: 2662065686110329989}
   piv: {fileID: 2662065686555968065}
-  motorForce: 150000
+  motorForce: 15000
   BrakeForce: 500000
-  steer: 60
+  steer: 35
   FLW: {fileID: 2662065685959721428}
   BLW: {fileID: 2662065685671197044}
   FRW: {fileID: 2662065686397849572}

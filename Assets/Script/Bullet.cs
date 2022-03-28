@@ -13,10 +13,6 @@ public class Bullet : MonoBehaviour
     // Start is called before the first frame update
     void OnTriggerEnter(Collider b)
     {
-        //if(b.gameObject.tag!="Bullet" && b.gameObject.tag!="Bullet0" && b.gameObject.tag!="BigBullet" && b.gameObject.tag!="BigBullet2")
-        //{
-         //   rigidBody.useGravity=true;
-            //rigidBody.isKinematic=true;
             if(trail)
             trail.SetActive(false);
             MF_AutoPool.Despawn(gameObject);
@@ -61,6 +57,8 @@ public class Bullet : MonoBehaviour
         //Destroy(gameObject,time);
         if(time<=0)
         {
+            if(trail)
+            trail.SetActive(false);
             MF_AutoPool.Despawn(gameObject,time);
         }
         if(time>=0)

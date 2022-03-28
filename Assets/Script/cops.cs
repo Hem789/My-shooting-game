@@ -13,7 +13,7 @@ public class cops : MonoBehaviour
     private Collider colli;
     public GetIn a;
     // Start is called before the first frame update
-    void OnCollisionStay(Collision a)
+    void OnTriggerStay(Collider a)
     {
         if(a.gameObject.tag=="Player")
         {
