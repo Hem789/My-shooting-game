@@ -809,6 +809,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1103919002}
     m_Modifications:
+    - target: {fileID: 875277816, guid: ddb3bb933fd20e84ea67156fe2433832, type: 3}
+      propertyPath: m_RootOrder
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 875277819, guid: ddb3bb933fd20e84ea67156fe2433832, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1154236612052000280, guid: ddb3bb933fd20e84ea67156fe2433832,
         type: 3}
       propertyPath: m_Layer
@@ -1003,6 +1011,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4885894196344541060, guid: ddb3bb933fd20e84ea67156fe2433832,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 686
+      objectReference: {fileID: 0}
+    - target: {fileID: 4885894196344541060, guid: ddb3bb933fd20e84ea67156fe2433832,
+        type: 3}
+      propertyPath: m_Center.y
+      value: -346.5674
+      objectReference: {fileID: 0}
+    - target: {fileID: 4885894196344541063, guid: ddb3bb933fd20e84ea67156fe2433832,
+        type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4885894196344541063, guid: ddb3bb933fd20e84ea67156fe2433832,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4885894196346025345, guid: ddb3bb933fd20e84ea67156fe2433832,
         type: 3}
@@ -1242,6 +1270,11 @@ PrefabInstance:
     - target: {fileID: 5429907739321791068, guid: ddb3bb933fd20e84ea67156fe2433832,
         type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5429907739339386808, guid: ddb3bb933fd20e84ea67156fe2433832,
+        type: 3}
+      propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5429907739339386811, guid: ddb3bb933fd20e84ea67156fe2433832,
@@ -1484,6 +1517,11 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 15
       objectReference: {fileID: 0}
+    - target: {fileID: 6975799354894881969, guid: ddb3bb933fd20e84ea67156fe2433832,
+        type: 3}
+      propertyPath: m_Type
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6975799354894881971, guid: ddb3bb933fd20e84ea67156fe2433832,
         type: 3}
       propertyPath: m_Layer
@@ -1564,6 +1602,11 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 16
       objectReference: {fileID: 0}
+    - target: {fileID: 6975799355665347061, guid: ddb3bb933fd20e84ea67156fe2433832,
+        type: 3}
+      propertyPath: m_Type
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6975799355665347063, guid: ddb3bb933fd20e84ea67156fe2433832,
         type: 3}
       propertyPath: m_Layer
@@ -1586,6 +1629,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1498424178, guid: ddb3bb933fd20e84ea67156fe2433832, type: 3}
+    - {fileID: 7102531425661943127, guid: ddb3bb933fd20e84ea67156fe2433832, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ddb3bb933fd20e84ea67156fe2433832, type: 3}
 --- !u!114 &61695306
 MonoBehaviour:
@@ -36759,7 +36803,7 @@ MonoBehaviour:
   sideObjectNames: []
   selectedSO: 0
   rebuildSos: 0
-  sosCleared: 1
+  sosCleared: 0
   isSideObject: 0
   startOffsetActiveMarker: -1
   endOffsetActiveMarker: -1
@@ -37724,23 +37768,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1614496733}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1644870939
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 561528938, guid: f56d46228aee4734f9114056c53bb57e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  roadScr: {fileID: 1581326433}
-  prefabScr: {fileID: 0}
-  markers: 08000000
-  startEnd: 0
-  prefab: {fileID: 0}
 --- !u!1 &1654309496 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3339115944995823533, guid: 50bb5ce5a80de4b4cb01de4900fff202,
@@ -40791,16 +40818,15 @@ MonoBehaviour:
   OQDOODDQCQScript: {fileID: 0}
   OCQDCOCDODElement: -1
   OODCCDOQDD: -1
-  OOCCOCQODO: {fileID: 1581326433}
+  OOCCOCQODO: {fileID: 0}
   OOCCODCCQD: {fileID: 0}
-  OODOQODCCO: 8
+  OODOQODCCO: -1
   selectedRoadSOMarker: -1
   selectedMarkerNode: -1
   selectedMarkerNodes: 
   selectedMarkerSONode: -1
   selectedMarkerSONodes: 
-  selectedObjects:
-  - {fileID: 1644870939}
+  selectedObjects: []
   selectedExitRoad: -1
   newRoadFlag: 0
   roadTypeUpdateFlag: 1
