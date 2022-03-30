@@ -331,6 +331,16 @@ public class enemyWalk : MonoBehaviour
         }
         if((seen==true || lvl==2) && doNevMesh==true && transform.position.y>swim+.5F)
         {
+            if(t1)
+            {
+                Destroy(t1.gameObject);
+                Destroy(t2.gameObject);
+                Destroy(t3.gameObject);
+                Destroy(t4.gameObject);
+                Destroy(t5.gameObject);
+                Destroy(t6.gameObject);
+                Destroy(target.gameObject);
+            }
             if(agent)
             {
         agent.enabled=true;

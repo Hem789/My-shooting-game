@@ -9,10 +9,10 @@ public class Car : MonoBehaviour
     public float motorForce,BrakeForce, steer;
     public Transform FLW,BLW,FRW,BRW;
     public FixedButton right, left,up ,down,brake;
-    public GameObject Light1,Light2,carcam,revMotion,maxRunSound;
+    public GameObject Light1,Light2,carcam;//,revMotion,maxRunSound;
     public AudioSource motion;
-    private bool revStarter=false;
-    private float h=0,v=0,maxRunTime=4.8F;
+    //private bool revStarter=false;
+    private float h=0,v=0;//,maxRunTime=4.8F;
     private GameManager manager;
     public WheelCollider FL,FR,BL,BR;// Start is called before the first frame update
     public void wheel(WheelCollider a,Transform b)
@@ -32,15 +32,15 @@ public class Car : MonoBehaviour
         if(manager.Pause==true)
             { 
         motion.enabled=false;
-        revMotion.SetActive(false);
+        //revMotion.SetActive(false);
             }
         piv.transform.rotation=Quaternion.Slerp(piv.transform.rotation,Quaternion.Euler(0,transform.rotation.eulerAngles.y,0),.4F*Time.deltaTime);
     }
-    void OnEnabled()
-    {
-        revStarter=false;
+    //void OnEnabled()
+    //{
+      //  revStarter=false;
         
-    }
+    //}
 
     // Upfixeddate is called once per frame
     void FixedUpdate()
@@ -57,34 +57,34 @@ public class Car : MonoBehaviour
         if(up.Pressed)
         {
             v=1;
-            if(maxRunTime>=0)
-            {
+            //if(maxRunTime>=0)
+            //{
             motion.enabled=true;
-            revMotion.SetActive(false);
-            maxRunTime-=Time.fixedDeltaTime;
-            }
-            else
-            {
-                motion.enabled=false;
-                maxRunSound.SetActive(true);
-            }
-           if(manager.Pause==false)
-            { 
+            //revMotion.SetActive(false);
+            //maxRunTime-=Time.fixedDeltaTime;
+            //}
+            //else
+            //{
+             //   motion.enabled=false;
+               // maxRunSound.SetActive(true);
+            //}
+           //if(manager.Pause==false)
+            //{ 
             
-            revStarter=true;
+           // revStarter=true;
 
-            }
+            //}
         }
         if(!up.Pressed)
         {
             motion.enabled=false;
-            if(revStarter==true)
+            /*if(revStarter==true)
             {
                 maxRunTime=4.8F;
                 maxRunSound.SetActive(false);
             revMotion.SetActive(true);
             revStarter=false;
-            }
+            }*/
         }
         
         if(down.Pressed)
@@ -92,7 +92,7 @@ public class Car : MonoBehaviour
             v=-.5F;
         Light1.SetActive(true);
         Light2.SetActive(true);
-        revMotion.SetActive(false);
+        //revMotion.SetActive(false);
         }
         if(right.Pressed)
         {
@@ -119,7 +119,7 @@ public class Car : MonoBehaviour
         
         if(Input.GetAxis("Jump")>0|| brake.Pressed==true)
         {
-            revMotion.SetActive(false);
+            //revMotion.SetActive(false);
             BL.brakeTorque=BrakeForce;
             BR.brakeTorque=BrakeForce;
             FL.brakeTorque=BrakeForce;

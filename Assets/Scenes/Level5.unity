@@ -428,7 +428,8 @@ PrefabInstance:
       propertyPath: m_Center.y
       value: 0.35780013
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4556620091471704918, guid: 0c33235d8e4ec124b8f0e17c87b30ee1, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0c33235d8e4ec124b8f0e17c87b30ee1, type: 3}
 --- !u!4 &8932341 stripped
 Transform:
@@ -9446,7 +9447,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1103919002}
     m_Modifications:
     - target: {fileID: 100000, guid: 8e888a9b2caa8f34aa28745d02ea24fb, type: 3}
       propertyPath: m_Name
@@ -9482,7 +9483,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8e888a9b2caa8f34aa28745d02ea24fb, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8e888a9b2caa8f34aa28745d02ea24fb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -12752,7 +12753,7 @@ PrefabInstance:
     - target: {fileID: 2696183530323470526, guid: 4bb4a05748e874f4ea7a2089cb5b4767,
         type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 3424431608317235204, guid: 4bb4a05748e874f4ea7a2089cb5b4767,
         type: 3}
@@ -13057,7 +13058,7 @@ PrefabInstance:
     - target: {fileID: 5246414413682442786, guid: 4bb4a05748e874f4ea7a2089cb5b4767,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5246414413682442787, guid: 4bb4a05748e874f4ea7a2089cb5b4767,
         type: 3}
@@ -13517,7 +13518,7 @@ PrefabInstance:
     - target: {fileID: 7768190885792679780, guid: 4bb4a05748e874f4ea7a2089cb5b4767,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7768190885792679780, guid: 4bb4a05748e874f4ea7a2089cb5b4767,
         type: 3}
@@ -13667,7 +13668,7 @@ PrefabInstance:
     - target: {fileID: 8721851457865495376, guid: 4bb4a05748e874f4ea7a2089cb5b4767,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4bb4a05748e874f4ea7a2089cb5b4767, type: 3}

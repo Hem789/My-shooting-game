@@ -10014,7 +10014,7 @@ SkinnedMeshRenderer:
   m_GameObject: {fileID: 1156318880719066066}
   m_Enabled: 1
   m_CastShadows: 1
-  m_ReceiveShadows: 1
+  m_ReceiveShadows: 0
   m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -10195,7 +10195,7 @@ SkinnedMeshRenderer:
   m_GameObject: {fileID: 1395043181968148744}
   m_Enabled: 1
   m_CastShadows: 1
-  m_ReceiveShadows: 1
+  m_ReceiveShadows: 0
   m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -10564,7 +10564,7 @@ SkinnedMeshRenderer:
   m_GameObject: {fileID: 2572675471671994774}
   m_Enabled: 1
   m_CastShadows: 1
-  m_ReceiveShadows: 1
+  m_ReceiveShadows: 0
   m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -11112,7 +11112,7 @@ SkinnedMeshRenderer:
   m_GameObject: {fileID: 3065755566853425052}
   m_Enabled: 1
   m_CastShadows: 1
-  m_ReceiveShadows: 1
+  m_ReceiveShadows: 0
   m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -11237,6 +11237,7 @@ Transform:
   - {fileID: 5930135880918519685}
   - {fileID: 664375664102588128}
   - {fileID: 7075709428833751588}
+  - {fileID: 4488952547104597291}
   - {fileID: 3442274055949637738}
   - {fileID: 3507036588366894860}
   m_Father: {fileID: 0}
@@ -11276,7 +11277,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!114 &2832868291110222387
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11371,7 +11372,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.2
+  m_Radius: 0.31
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 1, z: 0}
@@ -11617,7 +11618,7 @@ SkinnedMeshRenderer:
   m_GameObject: {fileID: 3630909247263148803}
   m_Enabled: 1
   m_CastShadows: 1
-  m_ReceiveShadows: 1
+  m_ReceiveShadows: 0
   m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -11720,8 +11721,8 @@ Transform:
   m_LocalPosition: {x: -0.0040283203, y: -0.0026150346, z: 0.05781555}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 3442274055949637738}
-  m_RootOrder: 0
+  m_Father: {fileID: 9047501371615908992}
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &732006842847523709
 AudioSource:
@@ -12246,7 +12247,7 @@ SkinnedMeshRenderer:
   m_GameObject: {fileID: 4697686133848864106}
   m_Enabled: 1
   m_CastShadows: 1
-  m_ReceiveShadows: 1
+  m_ReceiveShadows: 0
   m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -12333,7 +12334,7 @@ SkinnedMeshRenderer:
   m_GameObject: {fileID: 4896753847352753293}
   m_Enabled: 1
   m_CastShadows: 1
-  m_ReceiveShadows: 1
+  m_ReceiveShadows: 0
   m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -12831,7 +12832,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 9047501371615908992}
-  m_RootOrder: 21
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &548778882647902815
 BoxCollider:
@@ -12886,7 +12887,7 @@ SkinnedMeshRenderer:
   m_GameObject: {fileID: 5762183209730979728}
   m_Enabled: 1
   m_CastShadows: 1
-  m_ReceiveShadows: 1
+  m_ReceiveShadows: 0
   m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -13120,7 +13121,7 @@ SkinnedMeshRenderer:
   m_GameObject: {fileID: 6221267418604176768}
   m_Enabled: 1
   m_CastShadows: 1
-  m_ReceiveShadows: 1
+  m_ReceiveShadows: 0
   m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -28291,7 +28292,7 @@ Transform:
   m_GameObject: {fileID: 7840782461074344521}
   m_LocalRotation: {x: 0.000000018534251, y: 0.000000032680873, z: 0.000000058106508,
     w: 1}
-  m_LocalPosition: {x: 0, y: 1.53, z: 0.461}
+  m_LocalPosition: {x: 0, y: 1.53, z: 0.89}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 9047501371615908992}
@@ -33418,10 +33419,9 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 4488952547104597291}
+  m_Children: []
   m_Father: {fileID: 9047501371615908992}
-  m_RootOrder: 20
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &2319236989928527981
 AudioSource:
@@ -33444,7 +33444,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 0.05
-  MaxDistance: 0.1
+  MaxDistance: 0.0505
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -33532,7 +33532,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slide: {fileID: 0}
-  volumeCofficient: 0.05
+  volumeCofficient: 0.005
 --- !u!1 &8349435427728158362
 GameObject:
   m_ObjectHideFlags: 0
@@ -33914,7 +33914,7 @@ SkinnedMeshRenderer:
   m_GameObject: {fileID: 9040108956222121271}
   m_Enabled: 1
   m_CastShadows: 1
-  m_ReceiveShadows: 1
+  m_ReceiveShadows: 0
   m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
