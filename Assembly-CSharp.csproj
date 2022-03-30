@@ -82,6 +82,7 @@
      <Compile Include="Assets\Script\enemyWalk.cs" />
      <Compile Include="Assets\Script\FixedButton.cs" />
      <Compile Include="Assets\Script\FixedTouchField.cs" />
+     <Compile Include="Assets\Script\FPS.cs" />
      <Compile Include="Assets\Script\GameManager.cs" />
      <Compile Include="Assets\Script\GetIn.cs" />
      <Compile Include="Assets\Script\GetIn1.cs" />

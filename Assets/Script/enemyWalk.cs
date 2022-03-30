@@ -122,6 +122,19 @@ public class enemyWalk : MonoBehaviour
     }
     void FixedUpdate()
     {
+        if(seen==true)
+        {
+            if(t1)
+            {
+                Destroy(t1.gameObject);
+                Destroy(t2.gameObject);
+                Destroy(t3.gameObject);
+                Destroy(t4.gameObject);
+                Destroy(t5.gameObject);
+                Destroy(t6.gameObject);
+                Destroy(target.gameObject);
+            }
+        }
       
         if (manager.outside==true && health>0)
         {
@@ -163,6 +176,8 @@ public class enemyWalk : MonoBehaviour
             {
         if(distance.magnitude>=100)
         {
+            if(t1)
+            {
             t1.gameObject.SetActive(false);
             t2.gameObject.SetActive(false);
             t3.gameObject.SetActive(false);
@@ -170,10 +185,13 @@ public class enemyWalk : MonoBehaviour
             t5.gameObject.SetActive(false);
             t6.gameObject.SetActive(false);
             target.gameObject.SetActive(false);
+            }
             anime.enabled=false;
         }
         if(distance.magnitude<100)
         {
+            if(t1)
+            {
             t1.gameObject.SetActive(true);
             t2.gameObject.SetActive(true);
             t3.gameObject.SetActive(true);
@@ -181,6 +199,7 @@ public class enemyWalk : MonoBehaviour
             t5.gameObject.SetActive(true);
             t6.gameObject.SetActive(true);
             target.gameObject.SetActive(true);
+            }
             anime.enabled=true;
         }
             }
@@ -198,12 +217,15 @@ public class enemyWalk : MonoBehaviour
         anime.SetBool("Swim",false);
         if(dead==true)
         {
+            if(t1)
+            {
             t1.transform.parent=transform;
             t2.transform.parent=transform;
             t3.transform.parent=transform;
             t4.transform.parent=transform;
             t5.transform.parent=transform;
             t6.transform.parent=transform;
+            }
             agent.enabled=false;
             Destroy(gameObject,10);
         }
@@ -272,6 +294,10 @@ public class enemyWalk : MonoBehaviour
                     agent.enabled=false;
                     anime.applyRootMotion=true;
                     shoot=false;
+                    if(t1==null)
+                    {
+                    Destroy(gameObject);
+                    }
                 }
             }
                 if( manager.follow==false)
@@ -298,7 +324,7 @@ public class enemyWalk : MonoBehaviour
                     shoot=false;
                 }
             }
-        if(seen==false && lvl!=2)
+        if(seen==false && lvl!=4 && t1!=null)
         {
         if(target.position==t6.position && moveDirection.magnitude<=2F) 
         {
@@ -331,16 +357,7 @@ public class enemyWalk : MonoBehaviour
         }
         if((seen==true || lvl==2) && doNevMesh==true && transform.position.y>swim+.5F)
         {
-            if(t1)
-            {
-                Destroy(t1.gameObject);
-                Destroy(t2.gameObject);
-                Destroy(t3.gameObject);
-                Destroy(t4.gameObject);
-                Destroy(t5.gameObject);
-                Destroy(t6.gameObject);
-                Destroy(target.gameObject);
-            }
+            
             if(agent)
             {
         agent.enabled=true;
