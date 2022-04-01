@@ -824,12 +824,12 @@ PrefabInstance:
     - target: {fileID: 5930135880918519685, guid: e07ba10ccf3d8114ba756b014f22bf9e,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 8.9
+      value: 9.3
       objectReference: {fileID: 0}
     - target: {fileID: 6417858347897817559, guid: e07ba10ccf3d8114ba756b014f22bf9e,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 8.9
+      value: 9.7
       objectReference: {fileID: 0}
     - target: {fileID: 6417858347897817559, guid: e07ba10ccf3d8114ba756b014f22bf9e,
         type: 3}
@@ -9392,9 +9392,19 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5246414413506928983, guid: 4bb4a05748e874f4ea7a2089cb5b4767,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5246414413578176897, guid: 4bb4a05748e874f4ea7a2089cb5b4767,
         type: 3}
       propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5246414413578176897, guid: 4bb4a05748e874f4ea7a2089cb5b4767,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5246414413682442785, guid: 4bb4a05748e874f4ea7a2089cb5b4767,
@@ -9417,6 +9427,11 @@ PrefabInstance:
       propertyPath: Enter
       value: 
       objectReference: {fileID: 1783805188}
+    - target: {fileID: 5246414413682442787, guid: 4bb4a05748e874f4ea7a2089cb5b4767,
+        type: 3}
+      propertyPath: minHeight
+      value: 0.85
+      objectReference: {fileID: 0}
     - target: {fileID: 5246414413683144745, guid: 4bb4a05748e874f4ea7a2089cb5b4767,
         type: 3}
       propertyPath: m_Size.x
@@ -9431,6 +9446,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Center.y
       value: -545.22076
+      objectReference: {fileID: 0}
+    - target: {fileID: 5246414413683144746, guid: 4bb4a05748e874f4ea7a2089cb5b4767,
+        type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5246414413683144746, guid: 4bb4a05748e874f4ea7a2089cb5b4767,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5246414413683144751, guid: 4bb4a05748e874f4ea7a2089cb5b4767,
         type: 3}
@@ -9516,6 +9541,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RootOrder
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7606701048558783226, guid: 4bb4a05748e874f4ea7a2089cb5b4767,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 0.02
       objectReference: {fileID: 0}
     - target: {fileID: 7768190883833994687, guid: 4bb4a05748e874f4ea7a2089cb5b4767,
         type: 3}
@@ -38820,6 +38850,11 @@ PrefabInstance:
       propertyPath: m_ReceiveShadows
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 184851279174540086, guid: 09014960e770a654883e99eff1d30830,
+        type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 184851279177651744, guid: 09014960e770a654883e99eff1d30830,
         type: 3}
       propertyPath: m_Layer
@@ -38829,6 +38864,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 184851279177651746, guid: 09014960e770a654883e99eff1d30830,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 184851279177651747, guid: 09014960e770a654883e99eff1d30830,
         type: 3}
@@ -39580,6 +39620,11 @@ PrefabInstance:
       propertyPath: reloader
       value: 
       objectReference: {fileID: 1596629112}
+    - target: {fileID: 184851279571858695, guid: 09014960e770a654883e99eff1d30830,
+        type: 3}
+      propertyPath: height
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 184851279571858700, guid: 09014960e770a654883e99eff1d30830,
         type: 3}
       propertyPath: Right

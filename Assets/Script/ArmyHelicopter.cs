@@ -86,7 +86,7 @@ public class ArmyHelicopter : MonoBehaviour
         {
             Direction.y=0;
         }
-        if(Direction.magnitude<=2000 && Direction.magnitude>50)
+        if(/*Direction.magnitude<=2000 && */Direction.magnitude>50)
         {
             Quaternion look=Quaternion.LookRotation(new Vector3(Direction.x,0,Direction.z));
             Quaternion look1=Quaternion.Euler(15,look.eulerAngles.y,look.eulerAngles.z);

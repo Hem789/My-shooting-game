@@ -29,7 +29,7 @@ public class liftDoor : MonoBehaviour
         //}
         
     }
-    void OnTriggerEnter(Collider a)
+    /*void OnTriggerEnter(Collider a)
     {
         //if(anime)
         //{
@@ -44,7 +44,7 @@ public class liftDoor : MonoBehaviour
         time=1;
         }
         //}
-    }
+    }*/
     
     // Start is called before the first frame update
     void Awake()

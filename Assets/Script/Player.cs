@@ -11,6 +11,7 @@ public class Player : MonoBehaviour
     private BoxCollider colli;
     //private Collider[] ragdoll;
     public Rigidbody rb;
+
     private Vector3 Direction;
     public float moveSpeed,swim,swimf,height;
     private float time=8,reloadTime;
@@ -53,23 +54,25 @@ public class Player : MonoBehaviour
     }
     void LateUpdate()
     {
-        if(Physics.Raycast(transform.position+new Vector3(0,1F,0),-transform.up,out ground,50, ~mask))
+        if(Physics.Raycast(transform.position+new Vector3(0,1F,0),new Vector3(0,-1,0),out ground,50, ~mask))
         {
             if(transform.position.y>swim)
             {
-        rb.AddForce(transform.up*(-5000));
+                rb.AddForce(transform.up*(-5000));
             }
             if(ground.distance>height )
            {
-            anime.Play("Falling");
+                anime.Play("Falling");
+                //rb.AddForce(transform.up*(-15));
            }
             if(ground.transform.gameObject.tag=="Ground")
-            {
+           {
+
                 if(ground.distance>height )
            {
            falling=true;
            rb.AddForce(new Vector3(0,-180,0));
-           colli.center=new Vector3(colli.center.x,1.77F,colli.center.z);
+           colli.center=new Vector3(colli.center.x,1.8F,colli.center.z);
            colli.size=new Vector3(colli.size.x,.4F,colli.size.z);
            }
             }
