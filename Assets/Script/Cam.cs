@@ -31,7 +31,7 @@ public class Cam : MonoBehaviour
 
 
    
-    void Update()
+    void LateUpdate()
     {
         
         if(manager.outside==true && manager.follow==false)

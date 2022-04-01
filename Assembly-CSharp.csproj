@@ -677,6 +677,8 @@
  </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{D2E3D38B-F602-5931-65B8-51306FED7CAF}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
     <ProjectReference Include="NavMeshComponentsEditor.csproj">
       <Project>{800F5C04-FBA5-E050-7A1B-A25DBDBF3C0F}</Project>      <Name>NavMeshComponentsEditor</Name>    </ProjectReference>
     <ProjectReference Include="NavMeshComponents.csproj">

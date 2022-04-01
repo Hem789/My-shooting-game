@@ -276,7 +276,7 @@ public class enemyWalk : MonoBehaviour
             if(hit.transform.gameObject.tag=="Player" )
             {
                 seen=true;
-                seentime=50;
+                seentime=15;
                 if( moveDirection.magnitude<=30)
                 {
                     shoot=true;

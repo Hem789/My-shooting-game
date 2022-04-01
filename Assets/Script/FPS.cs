@@ -14,6 +14,7 @@ public class FPS : MonoBehaviour
         {
             foreach (var items in a)
             {
+                if(items)
                 items.SetActive(true);
             }
         }
@@ -23,6 +24,7 @@ public class FPS : MonoBehaviour
     {
         foreach(var items in a)
         {
+            if(items)
             items.SetActive(false);
         }
     }

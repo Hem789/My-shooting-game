@@ -232,7 +232,7 @@ public class Player : MonoBehaviour
             }
            
         }
-         
+         else
             {
                 rb.AddForce(transform.forward*20000);
             }

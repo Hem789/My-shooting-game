@@ -8,6 +8,8 @@ public class ArmyHelicopter : MonoBehaviour
     public CharacterController Controller;
     private Vector3 Direction;
     private GameObject Player;
+    [SerializeField]
+    private string targetName;
     public GameObject fan,backfan, Left,Right,bullet,fire,effect1,effect2;
     private float delay=0.1F,bulletCount=50, fireGap,decrease,Destr=15,seenCount=0;
     public float Speed,health;
@@ -67,11 +69,11 @@ public class ArmyHelicopter : MonoBehaviour
        
         fan.transform.Rotate(0,30,0);
         backfan.transform.Rotate(20,0,0);
-        Player=GameObject.FindWithTag("Player");
+        Player=GameObject.FindWithTag(targetName);
         Direction=Player.transform.position-transform.position;
         if(Physics.Raycast(transform.position,Direction,out hit2,250))
         {
-            if(hit2.transform.gameObject.tag=="Player")
+            if(hit2.transform.gameObject.tag==targetName)
             {
                 seenCount=0;
             }
