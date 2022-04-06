@@ -10,9 +10,9 @@ public class ArmyHelicopter : MonoBehaviour
     public LayerMask mask;
     public CharacterController Controller;
     private string tagy;
-    private Vector3 Direction;
+    private Vector3 Direction,dist;
     [SerializeField]
-    private GameObject Player;
+    private GameObject Player;//,listener;
     [SerializeField]
     private string targetName;
     public GameObject fan,backfan, Left,Right,bullet,fire,effect1,effect2;
@@ -36,6 +36,7 @@ public class ArmyHelicopter : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //listener=Camera.main.gameObject;
         tagy=this.gameObject.tag;
     fire.SetActive(false);
     manager=FindObjectOfType<GameManager>();
@@ -57,10 +58,15 @@ public class ArmyHelicopter : MonoBehaviour
         Destr=15;
         decrease=0;
     }
+   /* void FixedUpdate()
+    {
+        dist=transform.position-listener.transform.position;
+    }*/
 
     // Update is called once per frame
     void Update()
     {
+        
         if(Player==null)
         {
             firing.enabled=false;
@@ -81,7 +87,10 @@ public class ArmyHelicopter : MonoBehaviour
         }
         if(manager.Pause==false)
     {
+        //if(dist.magnitude<110)
+        //{
         flying.enabled=true;
+        //}
         if(health>0)
         {
             //firing.enabled=false;
@@ -124,7 +133,10 @@ public class ArmyHelicopter : MonoBehaviour
             {
             MF_AutoPool.Spawn(bullet,Left.transform.position,Left.transform.rotation);
             MF_AutoPool.Spawn(bullet,Right.transform.position,Right.transform.rotation);
+            //f(dist.magnitude<100)
+            //{
             firing.enabled=true;
+            //}
             effect1.SetActive(true);
             effect2.SetActive(true);
            // MF_AutoPool.Spawn(effect,Left.transform.position-transform.forward*0.1F,Left.transform.rotation);

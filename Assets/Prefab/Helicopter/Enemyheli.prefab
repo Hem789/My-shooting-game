@@ -154,7 +154,7 @@ MonoBehaviour:
   decrease: 0
   Destr: 15
   seenCount: 0
-  Speed: 0.4
+  Speed: 0.1
   health: 100
   firing: {fileID: 4356900331921707155}
   flying: {fileID: 4356900331531063376}
