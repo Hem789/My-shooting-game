@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -35,7 +35,7 @@ public class GetIn1 : MonoBehaviour
         {
             health--;
         }
-        if(c.gameObject.tag=="BigBullet2")
+        if(c.gameObject.tag=="BigBullet2"|| c.gameObject.tag=="BigBullet")
         {
             health-=4;
         }
@@ -90,6 +90,7 @@ public class GetIn1 : MonoBehaviour
     {
         heli=GetComponent<Helicopter>();
         heli.enabled=false;
+        if(player==null)
         player=GameObject.FindWithTag("Player");
         inside=false;
         playerout=false;
@@ -228,6 +229,11 @@ public class GetIn1 : MonoBehaviour
         if(transform.position.y<=swim+1 && inside==true)
         {
             playSound=false;
+            flying.enabled=false;
+           // heli.pivot.transform.parent=transform;
+            //heli.pivot.transform.position=transform.position;
+            cam.transform.position=helicam.transform.position;
+            cam.transform.rotation=helicam.transform.rotation;
             heli.enabled=false;
             if(drawntime<=0 && inside==true)
             {
@@ -276,7 +282,7 @@ public class GetIn1 : MonoBehaviour
             }
             else
             {
-                if(d<=0)
+               /* if(d<=0)
                 {
             //fan.transform.Rotate(0,10,0);
             //backfan.transform.Rotate(10,0,0);
@@ -285,7 +291,7 @@ public class GetIn1 : MonoBehaviour
                 if(d>0)
                 {
                     d-=Time.deltaTime;
-                }
+                }*/
                 if(inside==true)
                 {
                     //game over

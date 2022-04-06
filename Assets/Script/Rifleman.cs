@@ -69,7 +69,7 @@ void Awake()
         }
         
 
-if(playerDistance.magnitude<=20)
+if(playerDistance.magnitude<=10)
 {
 
         shoot.enabled=true;

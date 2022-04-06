@@ -50,7 +50,7 @@ MeshRenderer:
   m_GameObject: {fileID: 3484836518119978730}
   m_Enabled: 1
   m_CastShadows: 1
-  m_ReceiveShadows: 1
+  m_ReceiveShadows: 0
   m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -157,3 +157,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   don: 2
   anime: {fileID: 3484836518119978729}
+  level: {fileID: 0}
+  score: {fileID: 0}

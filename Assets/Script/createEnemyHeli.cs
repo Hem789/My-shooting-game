@@ -6,20 +6,23 @@ public class createEnemyHeli : MonoBehaviour
 {
     private GameObject player;
     public GameObject heli,suru;
-    private float x,z,delay;
+    [SerializeField]
+    private float delay,x;
     private RaycastHit hit;
     public Survival m;
     // Start is called before the first frame update
     void Start()
     {
-        
+        if (delay!=null)
+        x=delay;
     }
+    
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        x=Random.Range(-50,-40);
-        z=Random.Range(-50,-40);
+       // x=Random.Range(-50,-40);
+        //z=Random.Range(-50,-40);
         player=GameObject.FindWithTag("Player");
         if(player.transform.position.y>5)
         {
@@ -29,7 +32,15 @@ public class createEnemyHeli : MonoBehaviour
         {
             //MF_AutoPool.Spawn(heli,new Vector3(player.transform.position.x,0,player.transform.position.z)+new Vector3(5*x,20,5*z),Quaternion.Euler(0,180,0));
             MF_AutoPool.Spawn(heli,suru.transform.position,Quaternion.Euler(0,180,0));
+            if(x==0)
+            {
             delay=10;
+            }
+            else
+            {
+                delay=x;
+
+            }
             if(m!=null)
         {
             m.a();

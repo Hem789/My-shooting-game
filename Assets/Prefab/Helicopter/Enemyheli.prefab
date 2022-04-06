@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 2719211870747329300}
   m_Layer: 0
   m_Name: Enemyheli
-  m_TagString: Untagged
+  m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -133,7 +133,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5edf74adf1918941b02974d99fd54f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spaw: 0
+  mask:
+    serializedVersion: 2
+    m_Bits: 0
   Controller: {fileID: 4503055919585884432}
+  Player: {fileID: 0}
   targetName: Player
   fan: {fileID: 4870256541768232369}
   backfan: {fileID: 7143067737749240126}
@@ -143,6 +148,12 @@ MonoBehaviour:
   fire: {fileID: 2384808699904254360}
   effect1: {fileID: 3035773315326051066}
   effect2: {fileID: 5221031066951789858}
+  delay: 0.1
+  bulletCount: 50
+  fireGap: 0
+  decrease: 0
+  Destr: 15
+  seenCount: 0
   Speed: 0.4
   health: 100
   firing: {fileID: 4356900331921707155}

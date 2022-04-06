@@ -4,13 +4,19 @@ using UnityEngine;
 
 public class ArmyHelicopter : MonoBehaviour
 {
+    [SerializeField]
+    private bool spaw;
     private RaycastHit hit,hit2;
+    public LayerMask mask;
     public CharacterController Controller;
+    private string tagy;
     private Vector3 Direction;
+    [SerializeField]
     private GameObject Player;
     [SerializeField]
     private string targetName;
     public GameObject fan,backfan, Left,Right,bullet,fire,effect1,effect2;
+    [SerializeField]
     private float delay=0.1F,bulletCount=50, fireGap,decrease,Destr=15,seenCount=0;
     public float Speed,health;
     public AudioSource firing,flying;
@@ -30,6 +36,7 @@ public class ArmyHelicopter : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        tagy=this.gameObject.tag;
     fire.SetActive(false);
     manager=FindObjectOfType<GameManager>();
     effect1.SetActive(false);
@@ -37,6 +44,10 @@ public class ArmyHelicopter : MonoBehaviour
     }
     void OnEnable()
     {
+        if(tagy!=null)
+        {
+        this.gameObject.tag=tagy;
+        }
         health=100;
         fire.SetActive(false);
         firing.enabled=false;
@@ -50,6 +61,14 @@ public class ArmyHelicopter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(Player==null)
+        {
+            firing.enabled=false;
+        }
+        if(health<=0)
+        {
+            this.gameObject.tag="Untagged";
+        }
         if(seenCount<16)
         {
         seenCount+=Time.deltaTime;
@@ -70,8 +89,10 @@ public class ArmyHelicopter : MonoBehaviour
         fan.transform.Rotate(0,30,0);
         backfan.transform.Rotate(20,0,0);
         Player=GameObject.FindWithTag(targetName);
+        if(Player!=null)
+        {
         Direction=Player.transform.position-transform.position;
-        if(Physics.Raycast(transform.position,Direction,out hit2,250))
+        if(Physics.Raycast(transform.position,Direction,out hit2,250,mask))
         {
             if(hit2.transform.gameObject.tag==targetName)
             {
@@ -86,7 +107,7 @@ public class ArmyHelicopter : MonoBehaviour
         {
             Direction.y=0;
         }
-        if(/*Direction.magnitude<=2000 && */Direction.magnitude>50)
+        if(/*Direction.magnitude<=2000 &&*/ Direction.magnitude>50)
         {
             Quaternion look=Quaternion.LookRotation(new Vector3(Direction.x,0,Direction.z));
             Quaternion look1=Quaternion.Euler(15,look.eulerAngles.y,look.eulerAngles.z);
@@ -138,8 +159,10 @@ public class ArmyHelicopter : MonoBehaviour
 
         }
         }
+        }
         else
         {
+            
             if(decrease==0)
             {
             manager.enemy();
@@ -151,7 +174,10 @@ public class ArmyHelicopter : MonoBehaviour
                 // Destr=15;
                  fire.SetActive(false);
                 // health=100;
+                if(spaw==false)
                   MF_AutoPool.Despawn(gameObject);
+                  else
+                  this.gameObject.SetActive(false);
             }
             if(Destr>0)
             {

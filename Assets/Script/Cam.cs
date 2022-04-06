@@ -33,6 +33,8 @@ public class Cam : MonoBehaviour
    
     void LateUpdate()
     {
+        //camu.transform.position=pivot.transform.position;
+        //camu.transform.LookAt(pivot);
         
         if(manager.outside==true && manager.follow==false)
         {
