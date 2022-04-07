@@ -659,6 +659,11 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 2384808699904254360, guid: 6893ba83402a7f44a98531676a4a1004,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2956027117901615945, guid: 6893ba83402a7f44a98531676a4a1004,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -8920,8 +8925,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 518060473}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 314.8, y: -22.384155, z: 91.5}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -29.00885, y: -23.677916, z: -253.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1995768157}
@@ -8931,8 +8936,8 @@ Transform:
   - {fileID: 1664808768}
   - {fileID: 1041362859}
   - {fileID: 48795477}
-  m_Father: {fileID: 0}
-  m_RootOrder: 28
+  m_Father: {fileID: 1725273638}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &518060476
 MonoBehaviour:
@@ -22090,6 +22095,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2384808699904254360, guid: 6893ba83402a7f44a98531676a4a1004,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2956027117901615945, guid: 6893ba83402a7f44a98531676a4a1004,
         type: 3}
@@ -54323,6 +54333,11 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 2384808699904254360, guid: 6893ba83402a7f44a98531676a4a1004,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2956027117901615945, guid: 6893ba83402a7f44a98531676a4a1004,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -55071,6 +55086,7 @@ Transform:
   - {fileID: 1490372888}
   - {fileID: 1553127155}
   - {fileID: 957826227}
+  - {fileID: 518060475}
   m_Father: {fileID: 0}
   m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

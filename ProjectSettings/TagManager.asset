@@ -23,6 +23,12 @@ TagManager:
   - enemy
   - survive
   - Wall
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
   layers:
   - Default
   - TransparentFX

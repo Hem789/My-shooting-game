@@ -7,12 +7,16 @@ public class Level2 : MonoBehaviour
     private float time=1,plustime=0;
     public GameObject tactical,plus,player,coin;
     private GameManager manager;
+    [SerializeField]
+    private navig compass;
     private RaycastHit hit;
-    public float number;
+    [SerializeField]
+    private float number, kills;
     // Start is called before the first frame update
     void Start()
     {
         manager=FindObjectOfType<GameManager>();
+        compass.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -53,8 +57,9 @@ public class Level2 : MonoBehaviour
       {
         time-=Time.deltaTime;
       }
-      if(manager.Deaths>=30)
+      if(manager.Deaths>=kills)
       {
+        compass.gameObject.SetActive(true);
           coin.SetActive(true);
       }
     }

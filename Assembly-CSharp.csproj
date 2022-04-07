@@ -108,6 +108,7 @@
      <Compile Include="Assets\Script\sniperWalk.cs" />
      <Compile Include="Assets\Script\Survival.cs" />
      <Compile Include="Assets\Script\teleport.cs" />
+     <Compile Include="Assets\Script\temp.cs" />
      <Compile Include="Assets\Script\volume.cs" />
      <None Include="Assets\Helicopter\Info.txt" />
      <None Include="Assets\FreeMachineGun\Shader\BDCS.shader" />

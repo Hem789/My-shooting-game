@@ -5,14 +5,14 @@ using UnityEngine;
 public class ArmyHelicopter : MonoBehaviour
 {
     [SerializeField]
-    private bool spaw;
+    private bool spaw, seenDependent;
     private RaycastHit hit,hit2;
     public LayerMask mask;
     public CharacterController Controller;
     private string tagy;
     private Vector3 Direction,dist;
-    [SerializeField]
-    private GameObject Player;//,listener;
+  //  [SerializeField]
+    public GameObject Player;//,listener;
     [SerializeField]
     private string targetName;
     public GameObject fan,backfan, Left,Right,bullet,fire,effect1,effect2;
@@ -27,7 +27,7 @@ public class ArmyHelicopter : MonoBehaviour
         {
             health--;
         }
-        if(a.gameObject.tag=="BigBullet")
+        if(a.gameObject.tag=="BigBullet" || a.gameObject.tag=="BigBullet2")
         {
             health-=4;
         }
@@ -75,7 +75,7 @@ public class ArmyHelicopter : MonoBehaviour
         {
             this.gameObject.tag="Untagged";
         }
-        if(seenCount<16)
+        if(seenCount<16 && seenDependent==false)
         {
         seenCount+=Time.deltaTime;
         }
@@ -116,7 +116,7 @@ public class ArmyHelicopter : MonoBehaviour
         {
             Direction.y=0;
         }
-        if(/*Direction.magnitude<=2000 &&*/ Direction.magnitude>50)
+        if(Direction.magnitude<=2000 && Direction.magnitude>50)
         {
             Quaternion look=Quaternion.LookRotation(new Vector3(Direction.x,0,Direction.z));
             Quaternion look1=Quaternion.Euler(15,look.eulerAngles.y,look.eulerAngles.z);

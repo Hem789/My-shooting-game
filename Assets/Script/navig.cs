@@ -31,7 +31,7 @@ private float differenceAngle;
         angle=target.transform.position-player.transform.position;
         rot1=Quaternion.LookRotation(new Vector3(angle.x,0,angle.z));
         differenceAngle=rot1.eulerAngles.y-player.transform.rotation.eulerAngles.y;
-        rot2=Quaternion.Euler(0,0,differenceAngle);//*Quaternion.Euler(0,0,player.transform.rotation.eulerAngles.y);
+        rot2=Quaternion.Euler(0,0,-differenceAngle);//*Quaternion.Euler(0,0,player.transform.rotation.eulerAngles.y);
         //Debug.Log("(0,"+differenceAngle+",0)");
         transform.rotation=Quaternion.Slerp(transform.rotation,rot2,1);
     }
